@@ -6,11 +6,11 @@ on:
       - master
     paths:
       - 'auth/**'
-      
+
 jobs:
-    build:
-      runs-on: ubuntu-lates
-      steps:
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - run: cd auth && docker build -t dominikkrajcer/auth .
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
