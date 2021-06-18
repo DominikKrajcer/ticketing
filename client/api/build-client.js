@@ -5,7 +5,7 @@ const createAxiosInstance = ({ req }) => {
     // We are on the server
 
     return axios.create({
-      baseURL: 'ticketing-app-prod-dominikkrajcer.xyz',
+      baseURL: 'http://www.ticketing-app-prod-dominikkrajcer.xyz',
       // baseURL: 'http://ingress-nginx.ingress-nginx.svc.cluster.local',
       headers: req.headers,
     });
